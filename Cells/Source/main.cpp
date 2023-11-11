@@ -3,5 +3,5 @@
 
 int main() 
 {
-	std::cout << "ABC";
+	InitWindow(1280, 720, "abc");
 }
