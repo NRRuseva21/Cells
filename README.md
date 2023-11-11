@@ -2,12 +2,14 @@
 
 
 <p align = "center">
-  <img src="" alt="Cells's Logo"/>
+  <img src="Images/logo.png" alt="Cells's Logo"/>
 </p>
 
 <br>
 
 ## 📋 Description
+
+  Program for 8th and 9th grade students studying biology. It is in the form of a game that will benefit students to learn essential things related to the study material in an easy and accessible and interesting way.
   
 ## 🚀 Languages 
   <p align="left"> 
