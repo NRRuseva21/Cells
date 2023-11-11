@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../Header Files/menu.h"
+#include "../Header Files/topics.h"
 
 void mainMenu()
 {
@@ -13,7 +14,7 @@ void mainMenu()
         ClearBackground(LIGHTGRAY);
 
         // Draw the menu title
-        DrawText("Menu", screenWidth / 2 - MeasureText("Menu", 30) / 1.3, 80, 55, BLACK);
+        DrawText("Biology", screenWidth / 2 - MeasureText("Biology", 30) / 1.3, 80, 55, BLACK);
 
         // Draw the "Play" option
         Rectangle playButton = { screenWidth / 2 - 150, 160, 300, 120 };
@@ -32,7 +33,7 @@ void mainMenu()
         if (CheckCollisionPointRec(GetMousePosition(), playButton)) {
             DrawRectangleLinesEx(playButton, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
-
+                theTopics();
             }
         }
 
