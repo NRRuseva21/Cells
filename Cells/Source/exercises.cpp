@@ -1,7 +1,8 @@
-#include <iostream>
 #include "../Header Files/exercises.h"
+int score = 0;
 const int screenWidth = 1280;
 const int screenHeight = 720;
+std::string scoreText = "Your score is: ";
 
 //Grade 9, question5
 void wrong95()
@@ -15,8 +16,7 @@ void wrong95()
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
-        //if (IsKeyDown(KEY_SPACE))
-            //questions94();
+        result();
         EndDrawing();
     }
 
@@ -33,8 +33,7 @@ void correct95()
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
-        //if (IsKeyDown(KEY_SPACE))
-            //questions94();
+        result();
         EndDrawing();
     }
 
@@ -60,11 +59,8 @@ void question95()
             DrawRectangleLinesEx(a5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
+                score++;
                 correct95();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -180,11 +176,8 @@ void question94()
             DrawRectangleLinesEx(a4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
+                score++;
                 correct94();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -333,11 +326,8 @@ void question93()
             DrawRectangleLinesEx(c3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
+                score++;
                 correct93();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -438,11 +428,8 @@ void question92()
             DrawRectangleLinesEx(b2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
+                score++;
                 correct92();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -585,9 +572,10 @@ void question91()
             DrawRectangleLinesEx(d1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
+                score++;
                 correct91();
-                if (IsKeyDown(KEY_SPACE))
-                    question92();
+                /*if (IsKeyDown(KEY_SPACE))
+                    question92();*/
             }
         }
 
@@ -598,4 +586,38 @@ void question91()
 }
 
 
-
+void result()
+{
+    scoreText += std::to_string(score);
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+        ClearBackground(LIGHTGRAY);
+        if (score == 0 || score == 1)
+        {
+            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText("You should study more!", 250, 300, 40, BLACK);
+        }
+        else if (score == 2 || score == 3)
+        {
+            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText("You did well, but there is a room for improvement!", 250, 300, 40, BLACK);
+        }
+        else
+        {
+            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText("Amazing score!", 250, 300, 40, BLACK);
+        }
+        Rectangle exitButton2 = { screenWidth / 2 - 150, 450, 300, 120 };
+        DrawRectangleRec(exitButton2, GRAY);
+        DrawText("Exit", screenWidth / 2 - MeasureText("Exit", 20), 490, 45, BLACK);
+        if (CheckCollisionPointRec(GetMousePosition(), exitButton2)) {
+            DrawRectangleLinesEx(exitButton2, 2, BLACK);
+            if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+            {
+                CloseWindow();
+            }
+        }
+        EndDrawing();
+    }
+}
