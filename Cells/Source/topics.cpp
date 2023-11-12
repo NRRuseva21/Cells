@@ -13,7 +13,7 @@ void theTopics()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Menu\n", screenWidth / 2 - MeasureText("Menu\n", 30) / 1.3, 80, 55, BLACK);
+        DrawText("Choose a category", screenWidth / 2 - MeasureText("Menu\n", 30) - 180, 80, 55, BLACK);
 
         // Draw the "8 grade" option
         Rectangle eightGrade = { screenWidth / 2 - 150, 420, 300, 120 };

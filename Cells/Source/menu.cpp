@@ -14,7 +14,7 @@ void mainMenu()
         ClearBackground(LIGHTGRAY);
 
         // Draw the menu title
-        DrawText("Biology", screenWidth / 2 - MeasureText("Biology", 30) / 1.3, 80, 55, BLACK);
+        DrawText("Cells", screenWidth / 2 - MeasureText("Biology", 30) + 40, 80, 55, BLACK);
 
         // Draw the "Play" option
         Rectangle playButton = { screenWidth / 2 - 150, 160, 300, 120 };

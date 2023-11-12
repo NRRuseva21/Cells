@@ -1,7 +1,9 @@
 #include "../Header Files/exercises9Grade.h"
 int score9 = 0;
+//Set screen height and width
 const int screenWidth9 = 1280;
 const int screenHeight9 = 720;
+
 std::string scoreText9 = "Your score is: ";
 
 //Grade 9, question5
@@ -12,7 +14,7 @@ void wrong95()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -29,7 +31,7 @@ void correct95()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -51,7 +53,7 @@ void question95()
         DrawText("Question 5", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("Non-membraned organelles are:", 300, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question five, option "a"
         Rectangle a5 = { 170, 310, 300, 120 };
         DrawRectangleRec(a5, GRAY);
         DrawText("ribosomes", screenWidth9 / 4 - MeasureText("9 grade", 20) + 10, 350, 30, BLACK);
@@ -64,7 +66,7 @@ void question95()
             }
         }
 
-        //Question one, option "b"
+        //Question five, option "b"
         Rectangle b5 = { 750, 310, 300, 120 };
         DrawRectangleRec(b5, GRAY);
         DrawText("mitochondria", 810, 350, 30, BLACK);
@@ -80,7 +82,7 @@ void question95()
             }
         }
 
-        //Question one, option "c"
+        //Question five, option "c"
         Rectangle c5 = { 170, 510, 300, 120 };
         DrawRectangleRec(c5, GRAY);
         DrawText("the chloroplasts", screenWidth9 / 4 - MeasureText("9 grade", 20) - 50, 550, 30, BLACK);
@@ -96,7 +98,7 @@ void question95()
             }
         }
 
-        //Question one, option "d"
+        //Question five, option "d"
         Rectangle d5 = { 750, 510, 300, 120 };
         DrawRectangleRec(d5, GRAY);
         DrawText("lysosomes", 830, 550, 30, BLACK);
@@ -127,7 +129,7 @@ void wrong94()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -145,7 +147,7 @@ void correct94()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -168,7 +170,7 @@ void question94()
         DrawText("Question 4", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("The DNA to RNA genetic information shall be carried out in:", 120, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question four, option "a"
         Rectangle a4 = { 170, 310, 300, 120 };
         DrawRectangleRec(a4, GRAY);
         DrawText("translation ", screenWidth9 / 4 - MeasureText("9 grade", 20), 350, 30, BLACK);
@@ -181,7 +183,7 @@ void question94()
             }
         }
 
-        //Question one, option "b"
+        //Question four, option "b"
         Rectangle b4 = { 750, 310, 300, 120 };
         DrawRectangleRec(b4, GRAY);
         DrawText("replication", 830, 350, 30, BLACK);
@@ -197,7 +199,7 @@ void question94()
             }
         }
 
-        //Question one, option "c"
+        //Question four, option "c"
         Rectangle c4 = { 170, 510, 300, 120 };
         DrawRectangleRec(c4, GRAY);
         DrawText("transcription", screenWidth9 / 4 - MeasureText("9 grade", 20) - 20, 550, 30, BLACK);
@@ -213,7 +215,7 @@ void question94()
             }
         }
 
-        //Question one, option "d"
+        //Question four, option "d"
         Rectangle d4 = { 750, 510, 300, 120 };
         DrawRectangleRec(d4, GRAY);
         DrawText("translocation", 800, 550, 30, BLACK);
@@ -245,7 +247,7 @@ void wrong93()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -263,7 +265,7 @@ void correct93()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -286,7 +288,7 @@ void question93()
         DrawText("Question 3", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("In meiosis, unlike mitosis, we obtain: ", 320, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question three, option "a"
         Rectangle a3 = { 170, 310, 300, 120 };
         DrawRectangleRec(a3, GRAY);
         DrawText("2 haploid cells", screenWidth9 / 4 - MeasureText("9 grade", 20) - 30, 350, 30, BLACK);
@@ -302,7 +304,7 @@ void question93()
             }
         }
 
-        //Question one, option "b"
+        //Question three, option "b"
         Rectangle b3 = { 750, 310, 300, 120 };
         DrawRectangleRec(b3, GRAY);
         DrawText("2 diploid cells", 800, 350, 30, BLACK);
@@ -318,7 +320,7 @@ void question93()
             }
         }
 
-        //Question one, option "c"
+        //Question three, option "c"
         Rectangle c3 = { 170, 510, 300, 120 };
         DrawRectangleRec(c3, GRAY);
         DrawText("4 haploid cells", screenWidth9 / 4 - MeasureText("9 grade", 20) - 30, 550, 30, BLACK);
@@ -331,7 +333,7 @@ void question93()
             }
         }
 
-        //Question one, option "d"
+        //Question three, option "d"
         Rectangle d3 = { 750, 510, 300, 120 };
         DrawRectangleRec(d3, GRAY);
         DrawText("4 diploid cells", 800, 550, 30, BLACK);
@@ -363,7 +365,7 @@ void wrong92()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -381,7 +383,7 @@ void correct92()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -404,7 +406,7 @@ void question92()
         DrawText("Question 2", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("What process the replication is?", 320, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question two, option "a"
         Rectangle a2 = { 170, 310, 300, 120 };
         DrawRectangleRec(a2, GRAY);
         DrawText("cabolite", screenWidth9 / 4 - MeasureText("9 grade", 20) + 20, 350, 30, BLACK);
@@ -420,7 +422,7 @@ void question92()
             }
         }
 
-        //Question one, option "b"
+        //Question two, option "b"
         Rectangle b2 = { 750, 310, 300, 120 };
         DrawRectangleRec(b2, GRAY);
         DrawText("anabolic ", 850, 350, 30, BLACK);
@@ -433,7 +435,7 @@ void question92()
             }
         }
 
-        //Question one, option "c"
+        //Question two, option "c"
         Rectangle c2 = { 170, 510, 300, 120 };
         DrawRectangleRec(c2, GRAY);
         DrawText("exothermic ", screenWidth9 / 4 - MeasureText("9 grade", 20), 550, 30, BLACK);
@@ -449,7 +451,7 @@ void question92()
             }
         }
 
-        //Question one, option "d"
+        //Question two, option "d"
         Rectangle d2 = { 750, 510, 300, 120 };
         DrawRectangleRec(d2, GRAY);
         DrawText("oxidation ", 850, 550, 30, BLACK);
@@ -481,7 +483,7 @@ void wrong91()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -499,7 +501,7 @@ void correct91()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -574,8 +576,6 @@ void question91()
             {
                 score9++;
                 correct91();
-                /*if (IsKeyDown(KEY_SPACE))
-                    question92();*/
             }
         }
 
@@ -585,14 +585,16 @@ void question91()
     }
 }
 
-
+//Print result
 void result9()
 {
     scoreText9 += std::to_string(score9);
     while (!WindowShouldClose())
     {
+
         BeginDrawing();
         ClearBackground(LIGHTGRAY);
+        //Check score
         if (score9 == 0 || score9 == 1)
         {
             DrawText(scoreText9.c_str(), 250, 200, 40, BLACK);
@@ -608,6 +610,7 @@ void result9()
             DrawText(scoreText9.c_str(), 250, 200, 40, BLACK);
             DrawText("Amazing score!", 250, 300, 40, BLACK);
         }
+        //Draw "exit" button
         Rectangle exitButton2 = { screenWidth9 / 2 - 150, 450, 300, 120 };
         DrawRectangleRec(exitButton2, GRAY);
         DrawText("Exit", screenWidth9 / 2 - MeasureText("Exit", 20), 490, 45, BLACK);

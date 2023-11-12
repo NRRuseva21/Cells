@@ -12,7 +12,7 @@ void wrong85()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -29,7 +29,7 @@ void correct85()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -49,12 +49,12 @@ void question85()
         ClearBackground(LIGHTGRAY);
 
         DrawText("Question 5", screenWidth8 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
-        DrawText("Non-membraned organelles are:", 300, 250, 35, BLACK);
+        DrawText("Disease of the growing child's organism is:", 280, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question five, option "a"
         Rectangle a5 = { 170, 310, 300, 120 };
         DrawRectangleRec(a5, GRAY);
-        DrawText("ribosomes", screenWidth8 / 4 - MeasureText("8 grade", 20) + 10, 350, 30, BLACK);
+        DrawText("  rickets", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a5)) {
             DrawRectangleLinesEx(a5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -64,51 +64,39 @@ void question85()
             }
         }
 
-        //Question one, option "b"
+        //Question five, option "b"
         Rectangle b5 = { 750, 310, 300, 120 };
         DrawRectangleRec(b5, GRAY);
-        DrawText("mitochondria", 810, 350, 30, BLACK);
+        DrawText(" arthrosis", 820, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), b5)) {
             DrawRectangleLinesEx(b5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong85();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "c"
+        //Question five, option "c"
         Rectangle c5 = { 170, 510, 300, 120 };
         DrawRectangleRec(c5, GRAY);
-        DrawText("the chloroplasts", screenWidth8 / 4 - MeasureText("8 grade", 20) - 50, 550, 30, BLACK);
+        DrawText("osteoporosis", screenWidth8 / 4 - MeasureText("8 grade", 20) - 25, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c5)) {
             DrawRectangleLinesEx(c5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong85();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "d"
+        //Question five, option "d"
         Rectangle d5 = { 750, 510, 300, 120 };
         DrawRectangleRec(d5, GRAY);
-        DrawText("lysosomes", 830, 550, 30, BLACK);
+        DrawText("flat foot", 840, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), d5)) {
             DrawRectangleLinesEx(d5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong85();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -127,7 +115,7 @@ void wrong84()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -145,7 +133,7 @@ void correct84()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -166,12 +154,12 @@ void question84()
         ClearBackground(LIGHTGRAY);
 
         DrawText("Question 4", screenWidth8 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
-        DrawText("The DNA to RNA genetic information shall be carried out in:", 120, 250, 35, BLACK);
+        DrawText(" The basic structure and functional unit of the kidney is:", 120, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question four, option "a"
         Rectangle a4 = { 170, 310, 300, 120 };
         DrawRectangleRec(a4, GRAY);
-        DrawText("translation ", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
+        DrawText("the nephron", screenWidth8 / 4 - MeasureText("8 grade", 20) - 10, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a4)) {
             DrawRectangleLinesEx(a4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -181,26 +169,22 @@ void question84()
             }
         }
 
-        //Question one, option "b"
+        //Question four, option "b"
         Rectangle b4 = { 750, 310, 300, 120 };
         DrawRectangleRec(b4, GRAY);
-        DrawText("replication", 830, 350, 30, BLACK);
+        DrawText("malpighian body", 790, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), b4)) {
             DrawRectangleLinesEx(b4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong84();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "c"
+        //Question four, option "c"
         Rectangle c4 = { 170, 510, 300, 120 };
         DrawRectangleRec(c4, GRAY);
-        DrawText("transcription", screenWidth8 / 4 - MeasureText("8 grade", 20) - 20, 550, 30, BLACK);
+        DrawText("the glomerulus", screenWidth8 / 4 - MeasureText("8 grade", 20) - 30, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c4)) {
             DrawRectangleLinesEx(c4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -213,10 +197,10 @@ void question84()
             }
         }
 
-        //Question one, option "d"
+        //Question four, option "d"
         Rectangle d4 = { 750, 510, 300, 120 };
         DrawRectangleRec(d4, GRAY);
-        DrawText("translocation", 800, 550, 30, BLACK);
+        DrawText("the neuron", 820, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), d4)) {
             DrawRectangleLinesEx(d4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -245,7 +229,7 @@ void wrong83()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -263,7 +247,7 @@ void correct83()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -284,66 +268,54 @@ void question83()
         ClearBackground(LIGHTGRAY);
 
         DrawText("Question 3", screenWidth8 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
-        DrawText("In meiosis, unlike mitosis, we obtain: ", 320, 250, 35, BLACK);
+        DrawText("Which bone is involved in the shoulder joint: ", 250, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question three, option "a"
         Rectangle a3 = { 170, 310, 300, 120 };
         DrawRectangleRec(a3, GRAY);
-        DrawText("2 haploid cells", screenWidth8 / 4 - MeasureText("8 grade", 20) - 30, 350, 30, BLACK);
+        DrawText("beam bone ", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a3)) {
             DrawRectangleLinesEx(a3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong83();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "b"
+        //Question three, option "b"
         Rectangle b3 = { 750, 310, 300, 120 };
         DrawRectangleRec(b3, GRAY);
-        DrawText("2 diploid cells", 800, 350, 30, BLACK);
+        DrawText("sternum", 840, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), b3)) {
             DrawRectangleLinesEx(b3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong83();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "c"
+        //Question three, option "c"
         Rectangle c3 = { 170, 510, 300, 120 };
         DrawRectangleRec(c3, GRAY);
-        DrawText("4 haploid cells", screenWidth8 / 4 - MeasureText("8 grade", 20) - 30, 550, 30, BLACK);
+        DrawText("clavicle", screenWidth8 / 4 - MeasureText("8 grade", 20) + 20, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c3)) {
             DrawRectangleLinesEx(c3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score8++;
-                correct83();
+                wrong83();
             }
         }
 
-        //Question one, option "d"
+        //Question three, option "d"
         Rectangle d3 = { 750, 510, 300, 120 };
         DrawRectangleRec(d3, GRAY);
-        DrawText("4 diploid cells", 800, 550, 30, BLACK);
+        DrawText("shovel", 850, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), d3)) {
             DrawRectangleLinesEx(d3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                wrong83();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
+                score8++;
+                correct83();
             }
         }
 
@@ -363,7 +335,7 @@ void wrong82()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -381,7 +353,7 @@ void correct82()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -402,30 +374,14 @@ void question82()
         ClearBackground(LIGHTGRAY);
 
         DrawText("Question 2", screenWidth8 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
-        DrawText("What process the replication is?", 320, 250, 35, BLACK);
+        DrawText("A short bone is:", 480, 250, 35, BLACK);
 
-        //Question one, option "a"
+        //Question two, option "a"
         Rectangle a2 = { 170, 310, 300, 120 };
         DrawRectangleRec(a2, GRAY);
-        DrawText("cabolite", screenWidth8 / 4 - MeasureText("8 grade", 20) + 20, 350, 30, BLACK);
+        DrawText("vertebrae", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a2)) {
             DrawRectangleLinesEx(a2, 2, BLACK);
-            if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
-            {
-                wrong82();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
-            }
-        }
-
-        //Question one, option "b"
-        Rectangle b2 = { 750, 310, 300, 120 };
-        DrawRectangleRec(b2, GRAY);
-        DrawText("anabolic ", 850, 350, 30, BLACK);
-        if (CheckCollisionPointRec(GetMousePosition(), b2)) {
-            DrawRectangleLinesEx(b2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 score8++;
@@ -433,35 +389,39 @@ void question82()
             }
         }
 
-        //Question one, option "c"
+        //Question two, option "b"
+        Rectangle b2 = { 750, 310, 300, 120 };
+        DrawRectangleRec(b2, GRAY);
+        DrawText("  vane", 850, 350, 30, BLACK);
+        if (CheckCollisionPointRec(GetMousePosition(), b2)) {
+            DrawRectangleLinesEx(b2, 2, BLACK);
+            if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+            {
+                wrong82();
+            }
+        }
+
+        //Question two, option "c"
         Rectangle c2 = { 170, 510, 300, 120 };
         DrawRectangleRec(c2, GRAY);
-        DrawText("exothermic ", screenWidth8 / 4 - MeasureText("8 grade", 20), 550, 30, BLACK);
+        DrawText("  sternum", screenWidth8 / 4 - MeasureText("8 grade", 20), 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c2)) {
             DrawRectangleLinesEx(c2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong82();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
-        //Question one, option "d"
+        //Question two, option "d"
         Rectangle d2 = { 750, 510, 300, 120 };
         DrawRectangleRec(d2, GRAY);
-        DrawText("oxidation ", 850, 550, 30, BLACK);
+        DrawText(" humerus", 840, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), d2)) {
             DrawRectangleLinesEx(d2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong82();
-                if (IsKeyPressed(KEY_RIGHT))
-                {
-                    EndDrawing();
-                }
             }
         }
 
@@ -481,7 +441,7 @@ void wrong81()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print wrong answer template
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -499,7 +459,7 @@ void correct81()
         BeginDrawing();
 
         ClearBackground(LIGHTGRAY);
-
+        //Print correct answer template
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
@@ -520,47 +480,42 @@ void question81()
         ClearBackground(LIGHTGRAY);
 
         DrawText("Question 1", screenWidth8 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
-        DrawText("The function of the nucleus in the cell can be defined as:", 150, 250, 35, BLACK);
+        DrawText("Which function is not performed by connective tissue?", 150, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a1 = { 170, 310, 300, 120 };
         DrawRectangleRec(a1, GRAY);
-        DrawText("protective", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
+        DrawText("transport", screenWidth8 / 4 - MeasureText("8 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a1)) {
             DrawRectangleLinesEx(a1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) 
             {
                 wrong81();
-                if(IsKeyDown(KEY_SPACE))
-                    question82();
             }
         }
 
         //Question one, option "b"
         Rectangle b1 = { 750, 310, 300, 120 };
         DrawRectangleRec(b1, GRAY);
-        DrawText("immune", 850, 350, 30, BLACK);
+        DrawText("secretory", 830, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), b1)) {
             DrawRectangleLinesEx(b1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
                 wrong81();
-                if (IsKeyDown(KEY_SPACE))
-                    question82();
             }
         }
 
         //Question one, option "c"
         Rectangle c1 = { 170, 510, 300, 120 };
         DrawRectangleRec(c1, GRAY);
-        DrawText("structural", screenWidth8 / 4 - MeasureText("8 grade", 20), 550, 30, BLACK);
+        DrawText("supporting", screenWidth8 / 4 - MeasureText("8 grade", 20), 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c1)) {
             DrawRectangleLinesEx(c1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                wrong81();
-                if (IsKeyDown(KEY_SPACE))
-                    question82();
+                score8++;
+                correct81();
             }
         }
 
@@ -572,10 +527,7 @@ void question81()
             DrawRectangleLinesEx(d1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score8++;
-                correct81();
-                /*if (IsKeyDown(KEY_SPACE))
-                    question82();*/
+                wrong81();
             }
         }
 
