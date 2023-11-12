@@ -137,13 +137,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\exercises.cpp" />
+    <ClCompile Include="Source\exercises8Grade.cpp" />
+    <ClCompile Include="Source\exercises9Grade.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\menu.cpp" />
     <ClCompile Include="Source\topics.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header Files\exercises.h" />
+    <ClInclude Include="Header Files\exercises8Grade.h" />
+    <ClInclude Include="Header Files\exercises9Grade.h" />
     <ClInclude Include="Header Files\main.h" />
     <ClInclude Include="Header Files\menu.h" />
     <ClInclude Include="Header Files\topics.h" />

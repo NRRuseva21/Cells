@@ -5,8 +5,7 @@ void theTopics()
 {
     const int screenWidth = 1280;
     const int screenHeight = 720;
-    //InitWindow(screenWidth, screenHeight, "Cells");
-
+    
     //Categories
     while (!WindowShouldClose())
     {
@@ -28,15 +27,16 @@ void theTopics()
         DrawRectangleRec(ninthgrade, GRAY);
         DrawText("9 grade", screenWidth / 2 - MeasureText("9 grade", 20), 330, 45, BLACK);
 
-        // Check if the mouse is over the "Play" button
+        // Check if the mouse is over the "8 grade" button
         if (CheckCollisionPointRec(GetMousePosition(), eightGrade)) {
             DrawRectangleLinesEx(eightGrade, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
-                EndDrawing();
+                question81();
+                CloseWindow();
             }
         }
 
-        // Check if the mouse is over the "Exit" button
+        // Check if the mouse is over the "9 grade" button
         if (CheckCollisionPointRec(GetMousePosition(), ninthgrade)) {
             DrawRectangleLinesEx(ninthgrade, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))

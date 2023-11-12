@@ -1,8 +1,8 @@
-#include "../Header Files/exercises.h"
-int score = 0;
-const int screenWidth = 1280;
-const int screenHeight = 720;
-std::string scoreText = "Your score is: ";
+#include "../Header Files/exercises9Grade.h"
+int score9 = 0;
+const int screenWidth9 = 1280;
+const int screenHeight9 = 720;
+std::string scoreText9 = "Your score is: ";
 
 //Grade 9, question5
 void wrong95()
@@ -16,7 +16,7 @@ void wrong95()
         DrawText("This answer is wrong!  :(", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
-        result();
+        result9();
         EndDrawing();
     }
 
@@ -33,7 +33,7 @@ void correct95()
         DrawText("This answer is correct!  :)", 100, 80, 55, BLACK);
         DrawText("Press the space bar key to continue", 50, 200, 55, BLACK);
         DrawText("to the next question ", 50, 280, 55, BLACK);
-        result();
+        result9();
         EndDrawing();
     }
 
@@ -48,18 +48,18 @@ void question95()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Question 5", screenWidth / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
+        DrawText("Question 5", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("Non-membraned organelles are:", 300, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a5 = { 170, 310, 300, 120 };
         DrawRectangleRec(a5, GRAY);
-        DrawText("ribosomes", screenWidth / 4 - MeasureText("9 grade", 20) + 10, 350, 30, BLACK);
+        DrawText("ribosomes", screenWidth9 / 4 - MeasureText("9 grade", 20) + 10, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a5)) {
             DrawRectangleLinesEx(a5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score++;
+                score9++;
                 correct95();
             }
         }
@@ -83,7 +83,7 @@ void question95()
         //Question one, option "c"
         Rectangle c5 = { 170, 510, 300, 120 };
         DrawRectangleRec(c5, GRAY);
-        DrawText("the chloroplasts", screenWidth / 4 - MeasureText("9 grade", 20) - 50, 550, 30, BLACK);
+        DrawText("the chloroplasts", screenWidth9 / 4 - MeasureText("9 grade", 20) - 50, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c5)) {
             DrawRectangleLinesEx(c5, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -165,18 +165,18 @@ void question94()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Question 4", screenWidth / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
+        DrawText("Question 4", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("The DNA to RNA genetic information shall be carried out in:", 120, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a4 = { 170, 310, 300, 120 };
         DrawRectangleRec(a4, GRAY);
-        DrawText("translation ", screenWidth / 4 - MeasureText("9 grade", 20), 350, 30, BLACK);
+        DrawText("translation ", screenWidth9 / 4 - MeasureText("9 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a4)) {
             DrawRectangleLinesEx(a4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score++;
+                score9++;
                 correct94();
             }
         }
@@ -200,7 +200,7 @@ void question94()
         //Question one, option "c"
         Rectangle c4 = { 170, 510, 300, 120 };
         DrawRectangleRec(c4, GRAY);
-        DrawText("transcription", screenWidth / 4 - MeasureText("9 grade", 20) - 20, 550, 30, BLACK);
+        DrawText("transcription", screenWidth9 / 4 - MeasureText("9 grade", 20) - 20, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c4)) {
             DrawRectangleLinesEx(c4, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -283,13 +283,13 @@ void question93()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Question 3", screenWidth / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
+        DrawText("Question 3", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("In meiosis, unlike mitosis, we obtain: ", 320, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a3 = { 170, 310, 300, 120 };
         DrawRectangleRec(a3, GRAY);
-        DrawText("2 haploid cells", screenWidth / 4 - MeasureText("9 grade", 20) - 30, 350, 30, BLACK);
+        DrawText("2 haploid cells", screenWidth9 / 4 - MeasureText("9 grade", 20) - 30, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a3)) {
             DrawRectangleLinesEx(a3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -321,12 +321,12 @@ void question93()
         //Question one, option "c"
         Rectangle c3 = { 170, 510, 300, 120 };
         DrawRectangleRec(c3, GRAY);
-        DrawText("4 haploid cells", screenWidth / 4 - MeasureText("9 grade", 20) - 30, 550, 30, BLACK);
+        DrawText("4 haploid cells", screenWidth9 / 4 - MeasureText("9 grade", 20) - 30, 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c3)) {
             DrawRectangleLinesEx(c3, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score++;
+                score9++;
                 correct93();
             }
         }
@@ -401,13 +401,13 @@ void question92()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Question 2", screenWidth / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
+        DrawText("Question 2", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("What process the replication is?", 320, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a2 = { 170, 310, 300, 120 };
         DrawRectangleRec(a2, GRAY);
-        DrawText("cabolite", screenWidth / 4 - MeasureText("9 grade", 20) + 20, 350, 30, BLACK);
+        DrawText("cabolite", screenWidth9 / 4 - MeasureText("9 grade", 20) + 20, 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a2)) {
             DrawRectangleLinesEx(a2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -428,7 +428,7 @@ void question92()
             DrawRectangleLinesEx(b2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score++;
+                score9++;
                 correct92();
             }
         }
@@ -436,7 +436,7 @@ void question92()
         //Question one, option "c"
         Rectangle c2 = { 170, 510, 300, 120 };
         DrawRectangleRec(c2, GRAY);
-        DrawText("exothermic ", screenWidth / 4 - MeasureText("9 grade", 20), 550, 30, BLACK);
+        DrawText("exothermic ", screenWidth9 / 4 - MeasureText("9 grade", 20), 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c2)) {
             DrawRectangleLinesEx(c2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -519,13 +519,13 @@ void question91()
 
         ClearBackground(LIGHTGRAY);
 
-        DrawText("Question 1", screenWidth / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
+        DrawText("Question 1", screenWidth9 / 2.3 - MeasureText("questions", 30) + 60, 80, 55, BLACK);
         DrawText("The function of the nucleus in the cell can be defined as:", 150, 250, 35, BLACK);
 
         //Question one, option "a"
         Rectangle a1 = { 170, 310, 300, 120 };
         DrawRectangleRec(a1, GRAY);
-        DrawText("protective", screenWidth / 4 - MeasureText("9 grade", 20), 350, 30, BLACK);
+        DrawText("protective", screenWidth9 / 4 - MeasureText("9 grade", 20), 350, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), a1)) {
             DrawRectangleLinesEx(a1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) 
@@ -553,7 +553,7 @@ void question91()
         //Question one, option "c"
         Rectangle c1 = { 170, 510, 300, 120 };
         DrawRectangleRec(c1, GRAY);
-        DrawText("structural", screenWidth / 4 - MeasureText("9 grade", 20), 550, 30, BLACK);
+        DrawText("structural", screenWidth9 / 4 - MeasureText("9 grade", 20), 550, 30, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), c1)) {
             DrawRectangleLinesEx(c1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -572,7 +572,7 @@ void question91()
             DrawRectangleLinesEx(d1, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
             {
-                score++;
+                score9++;
                 correct91();
                 /*if (IsKeyDown(KEY_SPACE))
                     question92();*/
@@ -586,31 +586,31 @@ void question91()
 }
 
 
-void result()
+void result9()
 {
-    scoreText += std::to_string(score);
+    scoreText9 += std::to_string(score9);
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(LIGHTGRAY);
-        if (score == 0 || score == 1)
+        if (score9 == 0 || score9 == 1)
         {
-            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText(scoreText9.c_str(), 250, 200, 40, BLACK);
             DrawText("You should study more!", 250, 300, 40, BLACK);
         }
-        else if (score == 2 || score == 3)
+        else if (score9 == 2 || score9 == 3)
         {
-            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText(scoreText9.c_str(), 250, 200, 40, BLACK);
             DrawText("You did well, but there is a room for improvement!", 250, 300, 40, BLACK);
         }
         else
         {
-            DrawText(scoreText.c_str(), 250, 200, 40, BLACK);
+            DrawText(scoreText9.c_str(), 250, 200, 40, BLACK);
             DrawText("Amazing score!", 250, 300, 40, BLACK);
         }
-        Rectangle exitButton2 = { screenWidth / 2 - 150, 450, 300, 120 };
+        Rectangle exitButton2 = { screenWidth9 / 2 - 150, 450, 300, 120 };
         DrawRectangleRec(exitButton2, GRAY);
-        DrawText("Exit", screenWidth / 2 - MeasureText("Exit", 20), 490, 45, BLACK);
+        DrawText("Exit", screenWidth9 / 2 - MeasureText("Exit", 20), 490, 45, BLACK);
         if (CheckCollisionPointRec(GetMousePosition(), exitButton2)) {
             DrawRectangleLinesEx(exitButton2, 2, BLACK);
             if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
