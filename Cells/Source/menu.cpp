@@ -2,11 +2,13 @@
 #include "../Header Files/menu.h"
 #include "../Header Files/topics.h"
 
+
 void mainMenu()
 {
     const int screenWidth = 1280;
     const int screenHeight = 720;
     InitWindow(screenWidth, screenHeight, "Cells");
+    
 
     while (!WindowShouldClose()) {
         BeginDrawing();
